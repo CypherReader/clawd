@@ -1,0 +1,20 @@
+# 1Password credentials
+.env
+.op*
+*.env
+secrets/
+
+# Session files
+*.session
+*.token
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
