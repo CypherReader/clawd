@@ -1,0 +1,8 @@
+{
+  "status": "running",
+  "pid": 128616,
+  "start_time": "2026-03-02T21:34:43+00:00",
+  "end_time": "2026-03-03T03:34:43+00:00",
+  "log_file": "/root/clawd/cross-platform-arbitrage/logs/collection_2026-03-02_21-34-43.log",
+  "data_dir": "/root/clawd/cross-platform-arbitrage/cmd/data-collector/data"
+}
