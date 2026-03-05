@@ -1,0 +1,13 @@
+{
+  "start_time": "2026-03-02T21:34:43.667595131Z",
+  "end_time": "2026-03-03T03:34:43.768332054Z",
+  "total_snapshots": 73,
+  "total_opportunities": 0,
+  "unique_market_pairs": 0,
+  "average_profit_percent": 0,
+  "max_profit_percent": 0,
+  "min_profit_percent": 0,
+  "executable_opportunities": 0,
+  "opportunities": [],
+  "summary": "\nData Collection Summary\n=======================\nCollection Period: 2026-03-02 21:34:43 to 2026-03-03 03:34:43 (6h0m0s)\nTotal Snapshots: 73\nSnapshot Interval: ~4m55.891790916s\n\nMarket Coverage\n---------------\nKalshi Markets: ~100\nPredictIt Markets: ~258\n\nArbitrage Opportunities\n-----------------------\nTotal Opportunities Found: 0\nUnique Market Pairs: 0\nExecutable Opportunities (≥1% profit): 0\n\nProfit Analysis\n---------------\nAverage Profit: 0.00%\nMaximum Profit: 0.00%\nMinimum Profit: 0.00%\n\nRecommendations\n---------------\nNo executable arbitrage opportunities found. This is normal for efficient markets.\nConsider: wider market coverage, faster execution, or lower profit thresholds.\n\nNext Steps\n----------\n1. Review detailed opportunity list\n2. Validate high-profit opportunities manually\n3. Test execution with small amounts\n4. Monitor for pattern changes\n5. Consider automated execution for ≥2% opportunities\n"
+}

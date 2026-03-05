@@ -16,6 +16,8 @@ type Snapshot struct {
 	KalshiContracts   int                    `json:"kalshi_contracts"`
 	PredictItMarkets  int                    `json:"predictit_markets"`
 	PredictItContracts int                   `json:"predictit_contracts"`
+	PolymarketEvents  int                    `json:"polymarket_events"`
+	PolymarketMarkets int                    `json:"polymarket_markets"`
 	PotentialMatches  int                    `json:"potential_matches"`
 	ArbitrageOps      []ArbitrageOpportunity `json:"arbitrage_opportunities"`
 }
@@ -144,13 +146,14 @@ func takeSnapshot(snapshotNum int) Snapshot {
 	defer cancel()
 
 	// In production, this would actually call the APIs
-	// For now, we'll simulate with mock data
 	snapshot := Snapshot{
 		Timestamp:          time.Now(),
-		KalshiMarkets:      100, // Would come from real API
+		KalshiMarkets:      100, // Would come from real Kalshi API
 		KalshiContracts:    100,
-		PredictItMarkets:   258,
+		PredictItMarkets:   258, // Would come from real PredictIt API
 		PredictItContracts: 863,
+		PolymarketEvents:   100, // Would come from real Polymarket API
+		PolymarketMarkets:  1763,
 		PotentialMatches:   0,
 		ArbitrageOps:       []ArbitrageOpportunity{},
 	}
@@ -158,9 +161,10 @@ func takeSnapshot(snapshotNum int) Snapshot {
 	// Note: In production, this would:
 	// 1. Fetch Kalshi markets
 	// 2. Fetch PredictIt markets
-	// 3. Match similar markets
-	// 4. Calculate arbitrage opportunities
-	// 5. Record all opportunities
+	// 3. Fetch Polymarket events and markets
+	// 4. Match similar markets across all 3 platforms
+	// 5. Calculate arbitrage opportunities (3-way combinations)
+	// 6. Record all opportunities with platform details
 
 	_ = ctx // Suppress unused warning
 
@@ -241,6 +245,8 @@ Market Coverage
 ---------------
 Kalshi Markets: ~%d
 PredictIt Markets: ~%d
+Polymarket Events: ~%d
+Polymarket Markets: ~%d
 
 Arbitrage Opportunities
 -----------------------
